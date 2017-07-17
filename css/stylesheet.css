@@ -1,0 +1,371 @@
+body{
+	font-family: "Raleway", san-serif;
+	color: #565656;
+	background-color: white;
+	padding: 30px;
+}
+
+.layout-column{
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+}
+
+.layout-row{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+}
+
+a{
+	color: #565656;
+}
+
+a:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #565656
+}
+
+p{
+	margin: 0;
+}
+
+h3{
+	margin: 0;
+}
+
+button{
+	margin-top: 50px;
+	height: 50px;
+	width: 180px;
+	text-align: center;
+	background-color: #303030;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* NAVIGATION */
+#navigation {
+	
+	width: 100%;
+	height: 60px;
+	padding: 10px 0;
+	position: fixed;
+	top: 30px;
+}
+
+#navigation.scrolled{
+	background-color: black;
+	top: 0px;
+	transition: background-color 1s;
+	transition-timing-function: ease 2s;
+	transition-delay: 0.1s;
+}
+
+.nav-container{
+	width: 100%
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-logo{
+	width: 30%;
+	height: 100%;
+}
+
+.nav-logo img{
+	height: 40px;
+}
+
+.nav-logo img.changed{
+	height: 30px;
+	width: 130px;
+}
+
+.nav-menu {
+	padding-right: 30px;
+	width: 70%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-menu a{
+	height: 100%;
+	padding: 5px 20px;
+	color: white;	
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.nav-menu a:first-child{
+	border: 1px solid #565656;
+}
+
+/* HEADER */
+#header{
+	width: 100%;
+	height: 100%;
+	background-image: url(http://tribe.red/wp-content/uploads/2017/04/alkukuva_bb.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 50px 0;
+}
+
+.header-container{
+	width: 100%
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-content{
+	padding: 130px 0 170px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.header-content h1{
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+}
+
+.header-content h3{
+	color: white;
+	line-height: 35px;
+}
+
+/* MOVE */
+#move{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	padding-top: 20px;
+}
+
+.move-container{
+	text-align: center;
+}
+
+.left-move{
+	width: 50%;
+}
+
+.left-move img{
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+.right-move{
+	width: 50%;
+	background-color: #f7f7f7;
+	border-left: 20px solid white;
+	border-bottom: 20px solid white;
+	justify-content: center;
+	align-items: center;
+	padding: 0 120px;
+}
+
+.right-move h3{
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.right-move p{
+	line-height: 25px;
+}
+
+/* GAMES */
+#games{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.games-container{
+	text-align: center;
+}
+
+.left-games{
+	width: 50%;
+	background-color: #f7f7f7;
+	border-right: 20px solid white;
+	border-top: 20px solid white;
+	justify-content: center;
+	align-items: center;
+	padding: 0 120px;
+}
+
+.right-games{
+	width: 50%;
+}
+
+.right-games img{
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+.left-games h3{
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.left-games p{
+	line-height: 25px;
+}
+
+/* JOIN US */
+#join{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 120px 0px 0px;
+}
+
+.join-container{
+	padding-bottom: 50px;
+}
+
+.left-join{
+	width: 50%;
+}
+
+.left-join img{
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+.right-join{
+	width: 50%;
+	padding-right: 220px;
+	padding-left: 80px;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-join h3{
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.right-join p{
+	line-height: 25px;
+}
+
+.line{
+	width: 50%;
+	border-right: 1px solid #c4c4c4;
+	height: 160px;
+	margin-bottom: -80px;
+	z-index: 1;
+}
+
+/* CAREER */
+#career{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.job {
+	width: 33%;
+	justify-content: flex-start;
+	padding: 80px 60px 100px;
+	background-color: #efefef;
+}
+
+.job:nth-child(2){
+	width: 34%;
+	background-color: black;
+	color: white;
+	position: relative;
+}
+
+.job h3{
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.job p{
+	line-height: 25px;
+}
+
+/* SERVICE */
+#service {
+	background-image: url(http://tribe.red/wp-content/uploads/2015/02/service-app-b.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% -152.667px;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.service-container {
+	padding: 150px 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-container p{
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.service-container hr{
+	width: 150px;
+	height: 1px;
+	color: white;
+	text-align: center;
+}
+
+.service-container h3{
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 5px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+/* FOOTER */
+#footer{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: white;
+	padding: 60px 0;
+}
+
+.footer-container{
+	padding: 0 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.left-footer{
+	width: 50%;
+}
+
+.right-footer{
+	width: 50%;
+	padding-left: 50px;
+}
